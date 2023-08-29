@@ -1,3 +1,5 @@
+import tkinter as tk
+from tkinter import messagebox, simpledialog
 import os
 import engine_generator
 
@@ -25,7 +27,6 @@ def get_yes_no_input(prompt):
         else:
             print("Invalid input. Please enter 'y' or 'n'.")
 
-
 def create_folder_if_not_exists(folder_name):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
@@ -39,7 +40,7 @@ def generate_engine():
     
     for bank_index in range(bank_count):
         bank_cylinders = []
-        # bank_flip = get_yes_no_input(f"Should bank {bank_index} be flipped? (y/n): ")
+        bank_flip = get_yes_no_input(f"Should bank {bank_index} be flipped? (y/n): ")
         
         cylinder_count = get_int_input(f"Enter the number of cylinders in bank {bank_index}: ")
         for i in range(cylinder_count):
@@ -49,21 +50,10 @@ def generate_engine():
         bank_angle = get_float_input(f"Enter the bank angle for bank {bank_index} (degrees): ")
         
         banks.append(engine_generator.Bank(bank_cylinders, bank_angle))
-        # banks[-1].flip = bank_flip
+        banks[-1].flip = bank_flip
     
     engine = engine_generator.Engine(banks, firing_order)
     engine.engine_name = engine_name
-    
-    # engine.starter_torque = get_float_input("Enter starter torque: ")
-    # engine.starter_speed = get_float_input("Enter starter speed: ")
-    # engine.redline = get_float_input("Enter redline RPM: ")
-    # engine.throttle_gamma = get_float_input("Enter throttle gamma: ")
-    
-    # engine.crank_mass = get_float_input("Enter crank mass: ")
-    # engine.bore = get_float_input("Enter bore: ")
-    # engine.stroke = get_float_input("Enter stroke: ")
-    # engine.rod_length = get_float_input("Enter rod length: ")
-    # engine.compression_height = get_float_input("Enter compression height: ")
     
     engine.generate()
 
@@ -73,7 +63,6 @@ def generate_engine():
     create_folder_if_not_exists(output_folder)
 
     output_filename = os.path.join(output_folder, f"{engine_name.lower()}_engine.mr")
-
     engine.write_to_file(output_filename)
 
     print(f"Engine configuration '{engine_name}' generated and saved to '{output_filename}'.")
