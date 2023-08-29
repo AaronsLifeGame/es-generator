@@ -7,8 +7,8 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 ---
 
 # Releases
-`0.0.1` - Command line generator.
-`0.1.0` - Gui (Coming soon).
+`0.0.1` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.1/es-generator-v0.0.1.zip) \
+`0.1.0` - Gui (Coming soon). \
 
 # Instructions
 for version `0.0.1`:
