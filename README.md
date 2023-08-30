@@ -3,29 +3,48 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
   
 ## Warning: Early builds, may not work without updated python libraries.
 
-![es-gen-v0.0.1.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.0.1.gif)
+![es-gen-v0.0.2.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.0.2.gif)
 ---
 
-# Releases
+## Releases
 `0.0.1` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.1/es-generator-v0.0.1.zip) \
-`0.1.0` - Gui (Coming soon). \
+`0.0.2` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.2/es-generator-v0.0.2.zip) \
+`0.0.3` - \
+`0.1.0` - Gui (Coming soon).
 
-# Instructions
-for version `0.0.1`:
-- start the 'engine.py' (es-generator/es-gen/engine.py).
+## Instructions 0.0.2 [Latest Release]
+1. **Prerequisites:**
+   - Ensure you have Python installed.
 
-- Engine Name: Enter the name of your engine.
-- Number of Banks: Enter the number of banks you want your engine to have (inline: 1, v/vr/flat: 2, w: 3-4).
-  - Number of Cylinders: The number fo cylinder in the bank.
-  - Cylinder 0: The order of cylinder on the crankshaft.
-  - Bank Angle: the angle of your banks (Anti-clockwise).
-  '*' (You may need to do this multiple times depending on the amount of cylinders).
-'*' (Repeat, depending on amount of banks (the oder of cylinder is continued from every bank)).
-- Done! (Engine configuration 'YOUR-ENGINE' generated and saved to (es-generator/es-gen/engines/YOUR-ENGINE_engine.py)).
+2. **Run the Script:**
+   - Open a terminal or command prompt.
+   - Navigate to the script's directory.
+   - Execute the script with: `python engine.py`.
 
-More info at [Engine Simulator](https://github.com/aaronslifegame/es-generator/docs/tutorals.md) in the future.
+3. **Basic Configuration:**
+   - Input engine name.
+   - Enter the number of banks.
+   - For each bank:
+   - enter the number of cylinders.
+   - Specify the cylinder order (starting from 0) for each bank.
+   - Specify bank angle (positive goes anti-clockwise).
+   - Choose whether to flip each bank.
+
+4. **Firing Order (Optional)r:**
+   - If you skip the order will be 1,2,3,4 and so on.
+   - Other wise input the firing order for each cylinder (starting from 1).
+
+5. **Advanced Settings (Optional):**
+   - Choose if you want to configure advanced settings (you can skip spesific setting just by pressing enter, this will use the default value).
+   - Adjust values such as starter torque, redline, etc.
+   - [Explanation Here](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions#v002)  
+
+6. **Engine Generation**
+   - The generated engine configuration file will be saved in the `engines` folder as a `.mr` file.
+
+More info at [Engine Simulator](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions).
   
-# Sources
+## Sources
 [Engine Simulator](https://github.com/ange-yaghi/engine-sim)
 [Piranha](https://github.com/ange-yaghi/piranha)
 [Python Engine Generator](https://github.com/ange-yaghi/engine-generator)
