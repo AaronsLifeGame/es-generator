@@ -1,4 +1,4 @@
-# Engine Sim: Generator
+# Engine Simulator: Generator
 An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/engine-sim) by [AngeTheGreat](https://github.com/ange-yaghi).
   
 ## Warning: Early builds, may not work without updated python libraries.
@@ -9,7 +9,7 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 ## Releases
 `0.0.1` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.1/es-generator-v0.0.1.zip) \
 `0.0.2` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.2/es-generator-v0.0.2.zip) \
-`0.0.3` - \
+`0.0.3` - Upcoming. \
 `0.1.0` - Gui (Coming soon).
 
 ## Instructions 0.0.2 [Latest Release]
@@ -42,7 +42,7 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 6. **Engine Generation**
    - The generated engine configuration file will be saved in the `engines` folder as a `.mr` file.
 
-More info at [Engine Simulator](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions).
+More info at [Wiki Instructions](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions).
   
 ## Sources
 [Engine Simulator](https://github.com/ange-yaghi/engine-sim)
