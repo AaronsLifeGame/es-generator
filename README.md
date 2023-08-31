@@ -7,11 +7,14 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 ---
 
 ## Releases
-`0.1.0` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.1.0/es-generator-v0.1.0.zip) \
-`0.2.0` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.0/es-generator-v0.2.0.zip) \
-`0.3.0` - Upcoming. \
+`v1.0.0` - Gui (Coming soon). \
 
-`1.0.0` - Gui (Coming soon).
+`v0.3.0` - Upcoming. \
+`v0.2.1` - Bug Fixes (In progress) \
+
+`v0.2.0` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.0/es-generator-v0.2.0.zip) \
+`v0.1.0` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.1.0/es-generator-v0.1.0.zip) \
+
 
 ## Instructions 0.2.0 [Latest Release]
 1. **Prerequisites:**
