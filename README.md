@@ -3,16 +3,17 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
   
 ## Warning: Early builds, may not work without updated python libraries.
 
-![es-gen-v0.0.2.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.0.2.gif)
+![es-gen-v0.0.2.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.2.0.gif)
 ---
 
 ## Releases
-`0.0.1` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.1/es-generator-v0.0.1.zip) \
-`0.0.2` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.0.2/es-generator-v0.0.2.zip) \
-`0.0.3` - Upcoming. \
-`0.1.0` - Gui (Coming soon).
+`0.1.0` - Command line generator. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.1.0/es-generator-v0.1.0.zip) \
+`0.2.0` - Advanced Settings, Firing order, and more! [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.0/es-generator-v0.2.0.zip) \
+`0.3.0` - Upcoming. \
 
-## Instructions 0.0.2 [Latest Release]
+`1.0.0` - Gui (Coming soon).
+
+## Instructions 0.2.0 [Latest Release]
 1. **Prerequisites:**
    - Ensure you have Python installed.
 
@@ -37,7 +38,7 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 5. **Advanced Settings (Optional):**
    - Choose if you want to configure advanced settings (you can skip spesific setting just by pressing enter, this will use the default value).
    - Adjust values such as starter torque, redline, etc.
-   - [Explanation Here](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions#v002)  
+   - [Explanation Here](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions#v020)  
 
 6. **Engine Generation**
    - The generated engine configuration file will be saved in the `engines` folder as a `.mr` file.

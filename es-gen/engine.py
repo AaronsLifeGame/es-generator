@@ -82,8 +82,8 @@ def generate_engine():
         redline_input = input("Enter redline (8000): ")
         engine.redline = int(redline_input) if redline_input else 8000
 
-        rev_limit_input = input("Enter rev limit (" + {engine.redline + 1000} + "): ")
-        engine.rev_limit = int(rev_limit_input) if rev_limit_input else {engine.redline + 1000}
+        rev_limit_input = input(f"Enter rev limit ({engine.redline + 1000}): ")
+        engine.rev_limit = int(rev_limit_input) if rev_limit_input else engine.redline + 1000
              
         limiter_duration_input = input("Enter limiter duration (0.1): ")
         engine.limiter_duration = int(limiter_duration_input) if limiter_duration_input else 0.1
