@@ -3,8 +3,6 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
   
 ## Warning: Early builds, may not work without updated python libraries.
 
-
-[es-gen-v0.2.1](public/video/es-gen-v0.2.1.webm)
 ![es-gen-v0.2.1.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.2.1.gif)
 ---
 
