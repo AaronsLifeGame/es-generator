@@ -102,8 +102,8 @@ def generate_engine():
         rod_mass_input = input("Enter rod mass (50): ")
         engine.rod_mass = int(rod_mass_input) if rod_mass_input else 50
             
-        compression_height_input = input("Enter compression height (25.4): ")
-        engine.compression_height = int(compression_height_input) if compression_height_input else 25.4
+        compression_height_input = input("Enter compression height (25): ")
+        engine.compression_height = int(compression_height_input) if compression_height_input else 25
             
         crank_mass_input = input("Enter crank mass (10): ")
         engine.crank_mass = int(crank_mass_input) if crank_mass_input else 10
@@ -123,7 +123,7 @@ def generate_engine():
         engine.lobe_separation = int(lobe_separation_input) if lobe_separation_input else 114
             
         camshaft_base_radius_input = input("Enter camshaft base radius (0.5): ")
-        engine.camshaft_base_radius = int(camshaft_base_radius_input) if camshaft_base_radius_input else 0.5
+        engine.camshaft_base_radius = float(camshaft_base_radius_input) if camshaft_base_radius_input else 0.5
 
         lobe_center_input = input("Enter lobe_center (90): ")
         engine.intake_lobe_center = int(lobe_center_input) if lobe_center_input else 90
@@ -147,7 +147,7 @@ def generate_engine():
         engine.exhaust_length = int(exhaust_length_input) if exhaust_length_input else 20
             
         idle_throttle_plate_position_input = input("Enter idle throttle plate position (0.999): ")
-        engine.idle_throttle_plate_position = int(idle_throttle_plate_position_input) if idle_throttle_plate_position_input else 0.999
+        engine.idle_throttle_plate_position = float(idle_throttle_plate_position_input) if idle_throttle_plate_position_input else 0.999
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
     output_folder = os.path.join(script_directory, "engines")
