@@ -27,7 +27,6 @@ def get_yes_no_input(prompt):
         else:
             print("Invalid input. Please enter 'y' or 'n'.")
 
-
 def create_folder_if_not_exists(folder_name):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
@@ -44,9 +43,14 @@ def generate_engine():
 
         cylinder_count = get_int_input(f"Enter the number of cylinders in bank {bank_index}: ")
         for i in range(cylinder_count):
-            cylinder_number = get_int_input(f"Enter cylinder {i} number (starts at 0): ")
-            bank_cylinders.append(cylinder_number)
-            firing_order.append(cylinder_number) 
+            while True:
+                cylinder_number = get_int_input(f"Enter cylinder {i} number (starts at 0): ")
+                if cylinder_number not in firing_order:
+                    bank_cylinders.append(cylinder_number)
+                    firing_order.append(cylinder_number)
+                    break
+                else:
+                    print(f"Cylinder {cylinder_number} is already in use. Please enter a different cylinder number.")
 
         bank_angle_input = input(f"Enter the angle of bank {bank_index} (0 anti-clockwise): ")
         bank_angle = float(bank_angle_input) if bank_angle_input else 0
