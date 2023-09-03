@@ -77,16 +77,16 @@ def generate_engine():
 
     modify_engine = get_yes_no_input("Do you want to modify the engine settings? [y/N]: ")
     if modify_engine:
-        starter_torque_input = input("Enter starter torque [70]: ")
+        starter_torque_input = input("Enter starter torque [70 lb_ft]: ")
         engine.starter_torque = float(starter_torque_input) if starter_torque_input else 70.0
 
-        starter_speed_input = input("Enter starter speed [50]: ")
+        starter_speed_input = input("Enter starter speed [50 rpm]: ")
         engine.starter_speed = float(starter_speed_input) if starter_speed_input else 500.0
 
-        redline_input = input("Enter redline [8000]: ")
+        redline_input = input("Enter redline [8000 rpm]: ")
         engine.redline = float(redline_input) if redline_input else 8000.0
 
-        rev_limit_input = input(f"Enter rev limit [{engine.redline + 1000}]: ")
+        rev_limit_input = input(f"Enter rev limit [{engine.redline + 1000} rpm]: ")
         engine.rev_limit = float(rev_limit_input) if rev_limit_input else engine.redline + 1000.0
 
         limiter_duration_input = input("Enter limiter duration [0.1]: ")
@@ -94,50 +94,50 @@ def generate_engine():
 
         #
 
-        stroke_input = input("Enter stroke [86]: ")
+        stroke_input = input("Enter stroke [86 mm]: ")
         engine.stroke = float(stroke_input) if stroke_input else 86.0
 
-        bore_input = input("Enter bore [86]: ")
+        bore_input = input("Enter bore [86 mm]: ")
         engine.bore = float(bore_input) if bore_input else 86.0
 
-        rod_length_input = input("Enter rod length [120]: ")
+        rod_length_input = input("Enter rod length [120 mm]: ")
         engine.rod_length = float(rod_length_input) if rod_length_input else 120.0
 
-        rod_mass_input = input("Enter rod mass [50]: ")
+        rod_mass_input = input("Enter rod mass [50 g]: ")
         engine.rod_mass = float(rod_mass_input) if rod_mass_input else 50.0
 
-        compression_height_input = input("Enter compression height [25.4]: ")
+        compression_height_input = input("Enter compression height [25.4 mm]: ")
         engine.compression_height = float(compression_height_input) if compression_height_input else 25.4
 
-        crank_mass_input = input("Enter crank mass [10]: ")
+        crank_mass_input = input("Enter crank mass [10 kg]: ")
         engine.crank_mass = float(crank_mass_input) if crank_mass_input else 10.0
 
-        flywheel_mass_input = input("Enter flywheel mass [10]: ")
+        flywheel_mass_input = input("Enter flywheel mass [10 kg]: ")
         engine.flywheel_mass = float(flywheel_mass_input) if flywheel_mass_input else 10.0
 
-        flywheel_radius_input = input("Enter flywheel radius [100]: ")
+        flywheel_radius_input = input("Enter flywheel radius [100 mm]: ")
         engine.flywheel_radius = float(flywheel_radius_input) if flywheel_radius_input else 100.0
 
-        piston_mass_input = input("Enter piston mass [50]: ")
+        piston_mass_input = input("Enter piston mass [50 g]: ")
         engine.piston_mass = float(piston_mass_input) if piston_mass_input else 50.0
 
         #
 
-        lobe_separation_input = input("Enter lobe separation [114]: ")
+        lobe_separation_input = input("Enter lobe separation [114 deg]: ")
         engine.lobe_separation = float(lobe_separation_input) if lobe_separation_input else 114.0
 
-        camshaft_base_radius_input = input("Enter camshaft base radius [0.5]: ")
+        camshaft_base_radius_input = input("Enter camshaft base radius [0.5 inch]: ")
         engine.camshaft_base_radius = float(camshaft_base_radius_input) if camshaft_base_radius_input else 0.5
 
-        lobe_center_input = input("Enter lobe_center [90]: ")
+        lobe_center_input = input("Enter lobe center [90 deg]: ")
         engine.intake_lobe_center = float(lobe_center_input) if lobe_center_input else 90.0
         engine.exhaust_lobe_center = float(lobe_center_input) if lobe_center_input else 90.0
 
-        lobe_lift_input = input("Enter lobe lift [551]: ")
+        lobe_lift_input = input("Enter lobe lift [551 thou]: ")
         engine.intake_lobe_lift = float(lobe_lift_input) if lobe_lift_input else 551.0
         engine.exhaust_lobe_lift = float(lobe_lift_input) if lobe_lift_input else 551.0
 
-        lobe_duration_input = input("Enter lobe duration [235]: ")
+        lobe_duration_input = input("Enter lobe duration [235 deg]: ")
         engine.intake_lobe_duration = float(lobe_duration_input) if lobe_duration_input else 235.0
         engine.exhaust_lobe_duration = float(lobe_duration_input) if lobe_duration_input else 235.0
 
@@ -145,9 +145,13 @@ def generate_engine():
         engine.intake_lobe_steps = int(lobe_steps_input) if lobe_steps_input else 512
         engine.exhaust_lobe_steps = int(lobe_steps_input) if lobe_steps_input else 512
 
+        
+        chamber_volume_input = input("Enter chamber volume [300 cc]: ")
+        engine.chamber_volume = int(chamber_volume_input) if chamber_volume_input else 300
+
         #
 
-        exhaust_length_input = input("Enter exhaust length [20]: ")
+        exhaust_length_input = input("Enter exhaust length [20 inch]: ")
         engine.exhaust_length = float(exhaust_length_input) if exhaust_length_input else 20.0
 
         idle_throttle_plate_position_input = input("Enter idle throttle plate position [0.999]: ")
@@ -155,7 +159,7 @@ def generate_engine():
 
     modify_transmission = get_yes_no_input("Do you want to modify the transmission settings? [y/N]: ")
     if modify_transmission:
-        max_clutch_torque_input = input("Enter max clutch torque [1000]: ")
+        max_clutch_torque_input = input("Enter max clutch torque [1000 lb_ft]: ")
         engine.transmission.max_clutch_torque = float(max_clutch_torque_input) if max_clutch_torque_input else 1000
         
         modify_gears = get_yes_no_input("Do you want to modify the gear ratios? [y/N]: ")
@@ -170,14 +174,14 @@ def generate_engine():
 
     modify_vehicle = get_yes_no_input("Do you want to modify the vehicle settings? [y/N]: ")
     if modify_vehicle:
-        mass_input = input("Enter vehicle mass [798]: ")
+        mass_input = input("Enter vehicle mass [798 kg]: ")
         engine.vehicle.mass = float(mass_input) if mass_input else 798
         
         drag_coefficient_input = input("Enter drag coefficient [0.9]: ")
         engine.vehicle.drag_coefficient = float(drag_coefficient_input) if drag_coefficient_input else 0.9
         
-        front_area_input = input("Enter front cross-sectional area [72]: ")
-        rear_area_input = input("Enter rear cross-sectional area [36]: ")
+        front_area_input = input("Enter front cross-sectional area [72 inch]: ")
+        rear_area_input = input("Enter rear cross-sectional area [36 inch]: ")
         engine.vehicle.cross_sectional_area = [
             float(front_area_input) if front_area_input else 72, 
             float(rear_area_input) if rear_area_input else 36
@@ -186,10 +190,10 @@ def generate_engine():
         diff_ratio_input = input("Enter diff ratio [4.10]: ")
         engine.vehicle.diff_ratio = float(diff_ratio_input) if diff_ratio_input else 4.10
         
-        tire_radius_input = input("Enter tire radius [9]: ")
+        tire_radius_input = input("Enter tire radius [9 inch]: ")
         engine.vehicle.tire_radius = float(tire_radius_input) if tire_radius_input else 9
         
-        rolling_resistance_input = input("Enter rolling resistance [200]: ")
+        rolling_resistance_input = input("Enter rolling resistance [200 N]: ")
         engine.vehicle.rolling_resistance = float(rolling_resistance_input) if rolling_resistance_input else 200
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
