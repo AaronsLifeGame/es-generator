@@ -12,13 +12,13 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
 ## Releases
 `v1.0.0` - Gui (Coming soon). \
 
-`v0.3.0` - Upcoming, Added Transmission and Vehicle settings. \
+`v0.3.1` - Added Transmission and Vehicle modification. [Download [Latest Release]](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.3.1/es-gen-v0.3.1.zip) \
 
-`v0.2.2` - Advanced Settings & Firing order + Bug Fixes. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.2/es-gen-v0.2.2.zip) \
+`v0.2.3` - Advanced Settings & Firing order + Bug Fixes. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.3/es-gen-v0.2.3.zip) \
 `v0.1.0` - Command line generator [Initial release]. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.1.0/es-gen-v0.1.0.zip) \
 
 
-## Instructions 0.2.2 [Latest Release]
+## Instructions 0.3.1 [Latest Release]
 1. **Prerequisites:**
    - Ensure you have Python installed.
 
@@ -55,9 +55,21 @@ An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/eng
    - ...
 
 More info at [Wiki Instructions](https://github.com/AaronsLifeGame/es-generator/wiki/Instructions).
+
+## Community/contributors
+>- AngeTheGreat
+>- DDev
+>- Supernalboot
+>- Strikkies
+>- QuickRushInc
+>- LamborghiniEnjoyer
+>- Goldwolf
+>- ISAK.M
+>- FateOri
+>- F*ckaroo
   
 ## Sources
-[Engine Simulator](https://github.com/ange-yaghi/engine-sim)
-[Piranha](https://github.com/ange-yaghi/piranha)
-[Python Engine Generator](https://github.com/ange-yaghi/engine-generator)
-[Enginette](https://github.com/Enginette/enginette)
+>- [Engine Simulator](https://github.com/ange-yaghi/engine-sim)
+>- [Piranha](https://github.com/ange-yaghi/piranha)
+>- [Python Engine Generator](https://github.com/ange-yaghi/engine-generator)
+>- [Enginette](https://github.com/Enginette/enginette)
