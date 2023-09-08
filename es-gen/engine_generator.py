@@ -114,7 +114,7 @@ class Engine:
         self.exhaust_lobe_steps = 512
 
         self.cylinder_head_node_name = "generated_head"
-        self.chamber_volume = 300
+        self.chamber_volume = 100
         self.intake_runner_volume = 149.6
         self.intake_runner_cross_section = [1.75, 1.75]
         self.exhaust_runner_volume = 50.0

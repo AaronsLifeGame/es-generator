@@ -1,24 +1,24 @@
 <p align="center"><img src="https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen.png" width="250" height="250"></p>
 
 # Engine Simulator: Generator
-An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/engine-sim) by [AngeTheGreat](https://github.com/ange-yaghi).
+An engine generator for the [Engine Simulator](https://github.com/ange-yaghi/engine-sim) by AngeTheGreat
   
 ## Warning: Early builds, may not work without updated python libraries.
 
 ![es-gen-v0.2.1.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.2.1.gif)
-![es-gen-v0.2.1.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.1.0.gif)
+![es-gen-v0.1.0.gif](https://github.com/AaronsLifeGame/es-generator/blob/main/public/es-gen-v0.1.0.gif)
 ---
 
 ## Releases
 `v1.0.0` - Gui (Coming soon). \
 
-`v0.3.1` - Added Transmission and Vehicle modification. [Download [Latest Release]](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.3.1/es-gen-v0.3.1.zip) \
+`v0.3.2` - Added Transmission and Vehicle modification. [Download [Latest Release]](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.3.2/es-gen-v0.3.2.zip) \
 
 `v0.2.3` - Advanced Settings & Firing order + Bug Fixes. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.2.3/es-gen-v0.2.3.zip) \
 `v0.1.0` - Command line generator [Initial release]. [Download](https://github.com/AaronsLifeGame/es-generator/releases/download/v0.1.0/es-gen-v0.1.0.zip) \
 
 
-## Instructions 0.3.1 [Latest Release]
+## Instructions 0.3.2 [Latest Release]
 1. **Prerequisites:**
    - Ensure you have Python installed.
 

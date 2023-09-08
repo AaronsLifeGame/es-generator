@@ -146,8 +146,8 @@ def generate_engine():
         engine.exhaust_lobe_steps = int(lobe_steps_input) if lobe_steps_input else 512
 
         
-        chamber_volume_input = input("Enter chamber volume [300 cc]: ")
-        engine.chamber_volume = int(chamber_volume_input) if chamber_volume_input else 300
+        chamber_volume_input = input("Enter chamber volume [100 cc]: ")
+        engine.chamber_volume = int(chamber_volume_input) if chamber_volume_input else 100
 
         #
 
